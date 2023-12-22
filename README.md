@@ -27,7 +27,7 @@ Before running, there is user input section that needs to be filled out. Note th
 
 On the command line, the command is as follows:
 
-  'python Make_SNP_List.py'
+'python Make_SNP_List.py'
 
 Or run script in Python IDE (written in Spyder IDE 5.4.3).
 
