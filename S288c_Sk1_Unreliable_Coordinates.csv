@@ -1,0 +1,236 @@
+Chromosome,Region_Start,Region_End,Notes
+1,0,28332,Left End
+1,159894,166208,"SEN34, YAR009C, YAR010C"
+1,169202,170313,ADE1 Knockout
+1,179939,180924,Could be okay
+1,192422,230218,Right end
+2,0,9672,Left End
+2,29488,36223,YBL100W-B
+2,220879,227014,YBL005W-B(A)
+2,258779,265521,YBR012WA(B) to YBR013C
+2,350035,350265,"no gene, from SK1"
+2,363826,364026,"from S288c, numt - mitochondrial DNA integrated into genome"
+2,469458,478014,"lys2?, tkl2? (both knock out), TEF2"
+2,614226,614663,"SK1 only, could be okay"
+2,643239,643771,no/ low coverage in SK1
+2,793206,813184,Right End
+3,0,2124,Left End
+3,9396,14053,"VBA3, ARS301, YCL068C, HMLALPHA2, HMLALPHA1"
+3,82522,92883,"TY1 LTR through TY2 LTR, sup53?, leu2?"
+3,123920,124660,LTR from SK1 and Diploid
+3,148094,151953,"Tty1 and ty4 LTRs, gap in S288c and low coverage in diploid"
+3,168213,169951,"tq(UUG)C, Ty1 LTR"
+3,198530,201320,"middle of BUD5, MATALPHA2, MATALPHA1 "
+3,268027,270274,middle of FIG2
+3,292351,295479,"ARS317, HMRA2, HMRA2, ARS318"
+3,307787,316620,Left End
+4,0,18805,Right end (starting at PAU)
+4,44166,48136,"SSB1, ARS404, ho? "
+4,126364,130171,"partial knockout of VMA1 (a CDS complement) in SK1, and low coverage in Diploid "
+4,148532,149351,Coverage dip in al in between PAR32 and GLT1
+4,159203,161225,sfa1? in SK1
+4,383152,383297,Choppy mapping in SK1 of PRM7 and BSC1
+4,434096,437830,Choppy mapping in SK1 and diploid of mostly ARS415 and between YDL007C-A and tS(AGA)D1
+4,461167,461935,"In between SOK1 and TRP1 (no coverage in SK1, high coverage in diploid and S288c)"
+4,471727,472988,RPL4B (encodes for Ribosomal 60s subunit)
+4,512198,538602,"YDR034C-D(C-A)(W-B), tL(UAA)D, ARO3, EHD3, KRS1, ENA5, ENA2, ENA1 "
+4,645035,651584,YDR098C-A(B)
+4,667972,668652,"tI(AAU)D, yellow and half no coverage in SK1 and Diploid "
+4,757206,759962,Middle of NUM1
+4,778623,779012,"High coverage but nothing mapped underneath in S288c, nothing mapped underneath for all, in between SSY1 and YDR161W"
+4,802636,806057,YDR17W-A
+4,871378,884443,YDR210W(A)(B) and YDR210C-C(D)
+4,946254,946399,SUP2
+4,981157,992715,YDR26W-A(B) and YDR261C-C(D)
+4,1022881,1023603,"Right before YDR282C, no coverage in SK1"
+4,1095629,1102074,YDR316W-A(B)
+4,1151271,1161357,"Gap before YDR341C, HXT7, HXT6, no coverage gap in SK1 only but non-specific (yellow) coverage in all"
+4,1206623,1212762,YDR365WA(B) AND YDR366C
+4,1243233,1245784,EFT2
+4,1307477,1308731,middle of HKR1
+4,1523127,1531933,Right end (start at PAU10)
+5,0,10111,"Left End, decided by Diploid"
+5,18819,23296,"DSF1, HXT13"
+5,62027,62598,"After tG(GCC)E, decided by Diploid"
+5,115791,117197,URA3 (which is suppose to be interrupted by a ty element)
+5,135560,136030,Non-specific (yellow) coverage between tK(CUU)E and tR(UCU)E
+5,142626,143365,Coverage drop in the MIT1
+5,249853,250209,Right before tQ(UUG)E1
+5,363123,363782,"RPS8B, ORF for ribosome"
+5,430723,432439,"snR52, determined by diploid"
+5,434319,435489,"tK(CUU)E2, determined by diploid"
+5,442794,449742,"tI(AAU)E1, YER137C-A, YER138C, YER138W-A"
+5,487718,488171,Between tE(UUC)E3 and YER158C
+5,492333,498508,"tR(ACG)E, YER160C, YER159C-A, "
+5,566501,576874,Right End
+6,0,14501,Left End
+6,137688,143927,YFL002W-A(B)
+6,268673,270161,"Right End, looked really good but might want to cut more"
+7,0,11754,Left End
+7,75520,74620,"Red and green coverage indicating switch in DNA sequences, in between tV(AAC)G3 and VRG4 "
+7,110769,111355,"Spike in coverage, and yellow coverage, in between tH(GUG) and YGL204C"
+7,114647,115756,"S288c and diploid only, green to red switch, between KEX1 and ARO8"
+7,155991,156373,Dip in coverage before MND1
+7,166027,166418,Dip in coverage in SK1 and diploid only in between TOS3 and MPT5
+7,224260,255348,"RPL1B, coverage jump and yellow"
+7,319311,320047,Hole around tH(GUG)G2 in Sk1 and Diploid
+7,323171,328709,Yellow before TOS8 and SOE1 in diploid and Sk1
+7,364210,366224,"Green to red switch and coverage dip in Sk1, RPL7A"
+7,401498,405577,"Overcoverage of PRM8, knockout of PRM8 and MST27 (in SK1), and yellow coverage around tR(UCU)G1 "
+7,431068,431707,Low coverage (below 200) in Sk1 and Diploid but over coverage (above 1700) btw YGL036W and MIG1
+7,496653,497809,"Low coverage from S288c and into Diploid, before into YGR001C, probably fine"
+7,535023,541824,YGR027W-A(B)
+7,561496,574790,YGR038C-A(B) and ARS721
+7,706925,712798,"tC(GCA)G, YGR109W-A(B)"
+7,735878,736427,"Yellow coverage, before tR(UCU)G3"
+7,763719,765629,Overcoverage and yellow coverage in TPO2
+7,778870,779112,Low coverage in Sk1 and bleeds into diploid 
+7,811254,823574,"YGR161WA(B), YGR161C-C(D), tV(AAC)G2"
+7,875823,879433,Two green to red switches tK(CUU)G3 and tW(CCA)G2 in Sk1 and Diploid
+7,930951,932185,Holes around tG(GCC)G2
+7,1001460,1001506,Low coverage in Sk1
+7,1064344,1090940,Right End
+8,0,8472,Left End
+8,11517,12872,PAU13
+8,85277,95103,"No or yellow coverage in YHL009W-A(B), non-blue coverage or gaps in YHL008C in SK1"
+8,117029,117132,"Overcoverage (over 1320) in SK1 and diploid, around ARS806"
+8,133184,134166,"Hole, peak, hole in Sk1 only, around ARS807"
+8,146247,146743,Non-specific (yellow) coverage peak right after tA(AGC)H
+8,192907,195073,DOG2 and DOG1 were partial knocked out in SK1
+8,212185,216336,"High and non-specific (yellow) coverage in S288c and diploid, and non-existent or non-specific (yellow) in SK1 over RUF5-1, ARS810, YHR054C, RUF5-2, and partially RSC30  "
+8,237303,238549,Green to red switch at tF(GAA)H1
+8,358478,358567,Green to red switch at tF(GAA)H2
+8,389043,389623,Spike in coverage and yellow in SK1 and diploid 
+8,391711,391940,Dip in coverage 
+8,451655,452157,Overcoverage in ENO2
+8,463767,463056,Hole in coverage in SK1 and diploid between OYE2 and tT(UGU)H
+8,525298,562643,Right End
+9,0,26167,Left End
+9,37193,39257,SUC2 in SK1and diploid
+9,196548,197380,Coverage peak and non-specific yellow coverage 
+9,205053,210813,YL082W-A and YL080W
+9,245931,246707,Peak in and non-specific yellow coverage YIL060W
+9,300258,301158,Peak in coverage between tK(CUU)I and YIL029C in SK1 only
+9,389209,393756,FLO11
+9,432689,439888,Right End
+10,0,28638,Left End
+10,153374,154746,Non-specific (yellow) coverage on TIF2
+10,197123,204605,"tA(AGC)J, YJL114W, YJL113W, ARS1008"
+10,354126,355428,Peak and valley coverage over between SUP7 and tR(UCU)J1 in SK1 and diploid
+10,390497,391749,Green to red color switch in color in S288c and diploid
+10,299624,400455,Spike in coverage in the middle of BBC1 in SK1 and diplod
+10,415536,416634,Green to red coverage at tW(CCA)J in SK1 
+10,416607,416607,Spike (3509) in coverage in S288c
+10,436183,436576,Dip in coverage in between PRE3 and AVT1
+10,472259,484184,YJR026W and YJR028W
+10,537968,538516,Spike (over 1000) in coverage in SK1 and diploid
+10,540971,541543,Dip to yellow coverage in SK1 and diploid
+10,604064,606443,"ime1::TRP1, lead to hole flanked by green and red coverage"
+10,648316,648740,Spike in coverage in the middle ATP2 in SK1 
+10,712548,715684,Non-specific (yellow) coverage in DAN4
+10,726605,745751,Right End
+11,0,16381,Left End
+11,78488,79122,Peak in coverage in SK1 at the beginning of SDS22
+11,202483,203100,Non-specific (yellow) coverage right before tK(CUU)K
+11,301493,302980,Green to red switch in coverage in between STB6 and tW(CCA)K
+11,311398,314601,Choppy coverage in SK1 and diploid
+11,382548,382645,Dip in coverage 
+11,458039,458590,Non-specific (yellow) coverage before tL(CAA)K in SK1 and diploid
+11,489986,491618,Green to red switch in coverage in SK1 and diploid
+11,517341,517947,Non-specific (yellow) coverage in between ARS116 and tA(AGC)K2
+11,554899,556256,"Yellow coverage, TIF1"
+11,577587,579113,Green to red switch in SK1 only
+11,646353,666815,Right End
+12,0,13920,Left End
+12,95465,97478,"SSA2, non-specific (yellow) coverage to peak"
+12,150685,151222,Dip in coverage (below 300) in SK1 and diploid
+12,214937,221156,"Non-specific (yellow) coverage tA(UGC)L, YLR035C-A,"
+12,365840,366356,Hole in coverage in SK1 and dip in coverage in diploid right before snR6
+12,373929,374487,Non-specific (yellow) to no coverage over tR(ACG)L
+12,412491,412841,Spike in coverage (5708) in S288c over ARS1215
+12,451730,490558,"Non-specific (yellow) coverage, peaks above 80,000,  "
+12,592052,599147,Non-specific coverage over YLR227-A(-B) with peak over 1000
+12,650690,656859,Non-specific (yellow) coverage over and around YLR265W-A
+12,731512,732136,"Peak in coverage (over 1000) in SK1, Non-specific in S288c, and peak with non-specific coverage in diploid"
+12,793104,794335,Green to red coverage on SK1 and diploid
+12,817964,819071,Green to red coverage at exactly TRR4 in S288c only
+12,823250,823638,Peak (over 1200) in SK1 and diploid
+12,941044,947378,Non-specific (yellow) coverage over YLR410-A(-B)
+12,975664,982360,Non-specific yellow coverage in between green to red
+12,1003657,1004135,Peak (over 1000) in SK1 and diploid
+12,1058708,1078177,Right End
+13,0,8503,Left End
+13,86904,87112,Dip in coverage in SK1
+13,168279,168795,Non-specific (yellow) coverage right before SUP5
+13,183479,190169,"Non-specific (yellow) coverage over ARS1308, tG(GCC)M, YML045W(-A)"
+13,196264,202337,Non-specific (yellow) coverage over YML040W and YML039W
+13,259020,260358,Green to red switch a bit after tS(AGA)M 
+13,356928,362957,Non-specific(yellow) coverage over YMR045C and YMR046C
+13,372584,379277,"Non-specific (yellow) coverage YMR050C, YMR51C"
+13,462541,464185,Green to red switch in SK1 and diploid
+13,480035,481491,Green to red switch in SK1 at tK(CUU)M
+13,503707,504240,Yellow (non-specific) covergae to low coverage after ARS1319
+13,586552,590895,Break in consensus and in hole in coverage over MSS11 surrounded by green and red coverage  
+13,608579,610036,Dip and then peak in coverage over DDR48 in Diploid and SK1
+13,768478,769074,Non-specific (yellow) coverage between tA(AGC)M2 and YMR24W-A
+13,873234,874636,Green to gap to red coverage over ADH2 in SK1
+13,907335,924431,Left End
+14,0,17250,Right End
+14,55910,56446,Dip in coverage (below 300) before MCK1
+14,96462,102667,Non-specific (yellow coverage) over YNL284C-A(-B)
+14,103837,105181,Green to red switch in S288c and diploid
+14,252513,253344,Yellow/ Non-specific coverage in the middle of SSB2
+14,519004,525519,Non-specific (yellow) and high coverage over YNL054W-A(-B)
+14,561692,574287,"Peaks and yellow coverage over tP(UGG)N2, ARS1423, YNL035C, tI(AAU)N1, YNL034W, YNL033W"
+14,587075,590033,"Only one parent has TRP1, which deleted mss11D0"
+14,597707,601955,"Mix of green to red switches, non-specific/ yellow coverage, and dip in coverage in SK1 and diploid, and yellow in S288c"
+14,631538,633088,"Green, gap, and red coverage in SK1"
+14,726104,727065,"After tL(UAA)N low to no coverage followed by non-specific/ yellow coverage in SK1 and diploid, and just yellow/ non-specific in S288c"
+14,752785,753467,Peak of over 1000 in SK1
+14,772119,784333,"Left End, starting at HXT17"
+15,0,15147,"Right End, stop at YOL159C"
+15,22476,33206,"Non-specific, gaps, and coverag exceeding 1200 in SK1 and diploid, rest of right end"
+15,60241,60844,Dip in coverage in all but below 300 in diploid
+15,110146,124012,"ZEO1, SUF1, INO4, YOL107W, tT(AGU)O1, ARS1509, WSC3, NDJ1, YOL103W-A, YOL103W-B"
+15,226478,228922,"Green, gap, red from SK1 in between tG(GCC)O1 and FSH1"
+15,260141,261046,Peak (2000-4700) in the middle of SMC5 from SK1 and diploid
+15,326470,326665,Dip in coverage (below 300) 
+15,353961,355483,Green to red switch in SK1 and diploid followed by dip in coverage (below 300) in all three 
+15,448340,449108,Dip coverage (under 300 in diploid and present in all)
+15,4620044,462497,Jump in coverage (1215) in S288c
+15,535911,537789,Dip coverage (under 300 in diploid and present in all)
+15,563944,566896,"Two green to red surround ADE2 in SK1 and diploid, ADE2 knocked out in S288c"
+15,575029,577736,"Yellow, no-specific coverage in EFT1"
+15,594524,600992,Non-specific coverage over YOR142W-A(-B)
+15,663509,665243,Gap and yellow coverage from SK1 that bleeds into diploid
+15,703666,710276,"YOR192C-C, YOR192C-A(-B), non-specific / yellow coverage"
+15,849334,850192,Spike and red to green in coverage from Sk1 bleed into diploid
+15,854187,855208,Yellow (non-specific) covergae to low coverage in SK1 and diploid
+15,969931,976361,Non-specific (yellow coverage) over YOR34W-A(-B)
+15,980054,980686,Peak before tP(UGG)O3
+15,1004280,1005146,Dip coverage (under 300 in diploid and present in all)
+15,1060433,1061054,No coverage over FIT3 in SK1
+15,1068546,1091291,"Left End, starting after PHR1"
+16,0,19810,Right End
+16,22935,26070,Bump in coverage flanked by red and green in SK1
+16,56294,64338,"YPL257W-A(-B) and YPL256W, non-specific yellow coverage, peaks (1000-2000), and holes in depth of coverage "
+16,135795,136369,Low coverage over RPL1A from SK1
+16,209746,211975,"Green to red switch, gap in coverage in SK1 and yellow in diploid before CBC2"
+16,338681,340060,"Green, gap, and red coverage from SK1 before CAR1"
+16,377250,378468,"RPS6A, gap in SK1 and yellow in diploid and S288c"
+16,436288,443759,"YPL060C-A, hole for SK1 and yellow for diploid and S288c"
+16,520357,521361,Dip in coverage in between IRC15 and SWI1
+16,555532,556972,Dip in coverage in between HAT1 and CIT3
+16,560065,561161,Peak with non-specific coverage in SK1 and diploid (over 1000 in SK1)
+16,650237,650923,Dip in coverage at the beginning of PUF2 (under 300 in diploid and present in all)
+16,675198,676240,"Dip in coverage, obvious in diploid only"
+16,688957,690284,Green to red switch at SUP16 from SK1
+16,700482,702361,Non-specific coverage over TEF1
+16,752984,753461,Dip in coverage from S288c at beginning of YPR114W
+16,769087,769731,Peak in coverage from SK1 and bleed into diploid after tK(UUU)P 
+16,772983,773804,Dip in coverage between CLB2 and CLB5
+16,804457,810849,Non-specific coverage over YPR137C-A(-B) and peake over tN(GUU)P
+16,837870,839948,No and low coverage of TPO3 in SK1 and diploid
+16,844206,857283,"Yellow coverage with peaks above 1000 over YPR158W-A(-B), ARS1629, YPR158C-C(-D), tA(AGC)P"
+16,860519,861199,Peak in SK1 And diploid
+16,924112,948066,"Right End, starts at before OPT2"
