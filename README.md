@@ -8,9 +8,9 @@ PROJECT OVERVIEW: Gradualism, the prevailing model for mutation accumulation and
 ## METHODOLOGY: 
 ![methods copy](https://github.com/JoyLove0/LOH_Finder/assets/108104001/20b85501-5da6-4908-a9d5-f001fba95c62)
 
-# Usage 
+# USAGE
 
-## Step 1: Running "Make_SNP_List.py"
+## STEP 1: Running "Make_SNP_List.py"
 
 This script should be ran after you have generates the variant list for the the diploid parent and the non reference parent (SK1) utilizing CLC Genomic Worknech. The workflow that does this process is called "Making Inputs for HetSNP List Generation."
 
@@ -27,7 +27,7 @@ Before running, there is user input section that needs to be filled out. Note th
 
 On the command line, the command is as follows:
 
-'python Make_SNP_List.py'
+`python Make_SNP_List.py`
 
 Or run script in Python IDE (written in Spyder IDE 5.4.3).
 
