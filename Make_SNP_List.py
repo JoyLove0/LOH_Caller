@@ -36,7 +36,7 @@ def data_prep(filename):
 
     """
     name = filename.split(".vcf")[0]
-    df = pd.read_csv(filename, sep = "\t", comment = "#")
+    df = pd.read_csv(filename, sep = "\t", comment = "#", header=None)
     df.columns = ["CHROM", "POS", "ID", "REF", "ALT", "QUAL", "FILTER", "INFO", "FORMAT", name]
     df["ID"] = df["CHROM"] + "_" + df["POS"].astype(str)
     return df
