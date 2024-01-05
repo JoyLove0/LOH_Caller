@@ -18,7 +18,7 @@ Before running, there is user input section that needs to be filled out. Note th
 
 | Inputs          | Descriptions  |
 | --------------  | ------------- |
-| wd              | This is the working directory. This will contain your inout VCF Files. |
+| wd              | This is the working directory. This will contain your input VCF Files. |
 | diploid_vcf     | Name of the vcf file that has the variant for the diploid. |
 | SK1_vcf         | Name of the vcf file that has the variant for the the non reference parent (SK1). | 
 | unreliables_csv | Name of the csv file containing where we cannot call LOH reliabile. This was created by going through the mapping files of SK1, S288c, and the SK1 X S288c diploid when mapped to S288c and finding areas of abnorally high and low coverage. This is included in the files provided. |   
