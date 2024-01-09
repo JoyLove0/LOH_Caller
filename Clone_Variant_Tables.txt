@@ -1,0 +1,4 @@
+JS1R1_S1_L004-1 (Reads, Individual Track).csv
+JS3R3_S49_L004 (Reads, Individual Track).csv
+JS4R1_S10_L004 (Reads, Individual Track).csv
+JS6R1_S60_L004 (Reads, Individual Track).csv
