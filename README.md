@@ -47,7 +47,8 @@ Or run script in Python IDE (written in Spyder IDE 5.4.3).
 
 After hitting run, select the location of the raw sequencing data of the LOH clones.
 
-## STEP 3 Code: Running "Make_Haplotype_Aware.py"
+## STEP 3 
+## Code: Running "Make_Haplotype_Aware.py"
 
 This script should be run after you have the "Evaluation LOH Clone Variant" worflow in CLC Genomic Workbench. 
 
