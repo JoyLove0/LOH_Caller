@@ -10,9 +10,17 @@ PROJECT OVERVIEW: Gradualism, the prevailing model for mutation accumulation and
 
 # USAGE
 
-## STEP 1: Running "Make_SNP_List.py"
+## STEP 1 
 
-This script should be ran after you have generates the variant list for the the diploid parent and the non reference parent (SK1) utilizing CLC Genomic Worknech. The workflow that does this process is called "Making Inputs for HetSNP List Generation."
+## Running CLC Genomic Workbench Worflow called "Making Inputs for HetSNP List Generation 
+
+![workflow snapshot](https://github.com/JoyLove0/LOH_Caller/assets/108104001/ba0c8a88-781f-4789-baf7-7d2ed7c3039c)
+
+After hitting run, input the location of the raw reads from the diploid parent and the non-reference parent (SK1). The outputs of this workflow are the variant lists for both parents in VCF format.
+
+## Running "Make_SNP_List.py"
+
+This script should be ran after you have generates the variant list for the diploid parent and the non-reference parent (SK1) utilizing CLC Genomic Worknech. The workflow that does this process is called "Making Inputs for HetSNP List Generation."
 
 Before running, there is user input section that needs to be filled out. Note that everything you (the user) write in this section MUST be put in quotes.
 
@@ -31,3 +39,34 @@ On the command line, the command is as follows:
 
 Or run script in Python IDE (written in Spyder IDE 5.4.3).
 
+## STEP 2
+
+## Running CLC Genomic Workbench Worflow called "Evaluation LOH Clone Variant"
+
+![worflow snapshot 2](https://github.com/JoyLove0/LOH_Caller/assets/108104001/a793ad79-6d64-45d2-8539-8b66b18fdde9)
+
+After hitting run, select the location of the raw sequencing data of the LOH clones.
+
+## STEP 3 Code: Running "Make_Haplotype_Aware.py"
+
+This script should be run after you have the "Evaluation LOH Clone Variant" worflow in CLC Genomic Workbench. 
+
+It is reccomended that this code is ran in a new directory.
+
+There are two version of this script that you will use depending on the file type of the LOH clone variant list. If you use the code ending in "_for_CSV.py" you will download each variant table from CLC. You must take out the collums in the right hand side so that only Chromosome, Region, Refernce, Allele, Count, and Covergae remain. If you are using code ending in "_for_VCF.py" the saves VCF files must be in the same directory of where the code itself is. 
+
+NOTE: You must make a txt file containing all of the names of your LOH variant files. To do this, you can run the following in command line.
+
+`ls *.csv > Clone_Variant_Tables.txt` (when you are using the code made for csv files)
+
+OR 
+
+`ls *.vcf > Clone_Variant_Tables.txt` (when you are using the code made for csv files)
+
+Regardless, check the Clone_Variant_Tables.txt for correctness. An example file is provided. 
+
+| Inputs            | Descriptions   |
+| ----------------  | -------------- |
+| wd                | This is the working directory. This will contain your input VCF/CSV Files. |
+| clone_tables_list | This is the name of the txt file containing the list of clone table names. If you used the lines above this will be "Clone_Variant_Tables.txt". |
+| coverage_minimum  | This must be a number with no quotesYou get to set the minimum coverage needed to reliable call region in your LOH tracks heterozygous or homozygous. If a position falls underneath this coverage, it will be marked "No Call Due to Low Coverage". Suggest to start with 25 and make this number higher to make this input more strict. | 
