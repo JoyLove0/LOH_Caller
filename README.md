@@ -1,14 +1,17 @@
 # LOH_Caller
 ## DESCRIPTION
 
-A haplotype aware and cost-effective LOH calling solution, leveraging Python and CLC Genomics Workbench.
+This tool is a haplotype aware and cost-effective LOH calling solution, leveraging CLC Genomics Workbench 23.0.4 and Python 3.11.4 64-bit. The Python portion of this tool has both a command line interface (CLI) and a graphical user interface (GUI). The usage for both of these will be detailed below. 
 
-PROJECT OVERVIEW: Gradualism, the prevailing model for mutation accumulation and evolution, states that independent mutations occurring over extended periods contribute to genetic diversity. However, alternative modes of mutation accumulation, such as punctuated bursts, have also been proposed. In our study on Saccharomyces cerevisiae (baker's yeast), we identified punctuated bursts, specifically in the accumulation of loss-of-heterozygosity (LOH) tracts. LOH tracts occur when heterozygous genomic regions (e.g., Aa) become homozygous for either one of the two available alleles (i.e., AA or aa). Accurate and efficient identification of LOH event from whole genome sequencing (WGS) data is crucial for understanding these mutation bursts. Currently, our group uses Nexus Copy Number to detect LOH tracts. However, this program has limitations: (1) Nexus Copy Number lacks haplotype awareness, making it challenging to determine which allele an LOH clone tract became homozygous for and (2) its license is costly. The goal of our study is to develop a haplotype aware and cost-effective LOH calling solution, leveraging CLC Genomics Workbench 23.0.4 and Python 3.11.4 64-bit. 
+Loss of Heterozygosity (LOH) is a class of chromosomal structural mutation that has important implications in the development of numerous genetic diseases, including cancer. LOH tracts occur when heterozygous genomic regions become homozygous for either one of the two available alleles. While using Saccharomyces cerevisiae as a model organism, we have identified LOH tracts in a mutation accumulation experiment. Accurate and efficient identification of LOH events from short-read whole genome sequencing (WGS) data is crucial for understanding these mutations.
 
 ## METHODOLOGY
+
+First, we created a complete list of heterozygous single nucleotide polymorphisms (HetSNPs) in the parent strain. We validated this list by mapping reads from the fully heterozygous parent diploid to one of the haploid parents (S288c, reference genome). We then derived a list of variants shared by the two sets and removed variants present at repetitive regions of the genome to arrive at a high-confidence HetSNP list. This enabled us to generate a custom variant tract in CLC. Subsequently, we mapped WGS reads from the known LOH clones above to the reference, creating a variant list for each LOH clone. These mapping variants were interrogated against the high-confidence HetSNP variant tract. CLC provided allelic identity and frequency outputs at all HetSNP positions, which were used in a custom Python code to make haplotype-aware phased genotyping calls. These calls were validated against known LOH tracts initially identified in Nexus. Our initial results show that this approach can reveal the full complexity of LOH tracts, including discontinuities in gene conversion segments near the recombination endpoints.
+
 ![methods copy](https://github.com/JoyLove0/LOH_Finder/assets/108104001/20b85501-5da6-4908-a9d5-f001fba95c62)
 
-# USAGE
+# CLI USAGE
 
 ## STEP 1 
 
@@ -71,3 +74,18 @@ Regardless, check the Clone_Variant_Tables.txt for correctness. An example file 
 | wd                | This is the working directory. This will contain your input VCF/CSV Files. |
 | clone_tables_list | This is the name of the txt file containing the list of clone table names. If you used the lines above this will be "Clone_Variant_Tables.txt". |
 | coverage_minimum  | This must be a number with no quotesYou get to set the minimum coverage needed to reliable call region in your LOH tracks heterozygous or homozygous. If a position falls underneath this coverage, it will be marked "No Call Due to Low Coverage". Suggest to start with 25 and make this number higher to make this input more strict. | 
+
+# Dependecies
+
+This tool requires CLC Genomic Workbench. The specific tools used in the "Making Inputs for HetSNP Lisy" are Map Reads to Reference, Basic Variant Detection, Filter on Custom Criteria, and Export in VCF. The tools used in "Evaluating LOH Clone Variants" are Map Reads to Reference, Identify Known Mutations from Mapping, and Export as VCF. 
+
+For more information on each these tools, see below:
+
+| Program       | Manuals and/or Useful Links   |
+| ------------- | ------------- |
+| All Manuals | https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/index.php?manual=Introduction_CLC_Genomics_Workbench.html |
+| Map Reads to Reference | https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/900/index.php?manual=Map_Reads_Reference.html |
+| Basic Variant Detection | https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/900/index.php?manual=Basic_Variant_Detection.html |
+| Filter on Custom Criteria | https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/index.php?manual=Filter_on_Custom_Criteria.html |
+| Export in VCF | https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/current/index.php?manual=Export_in_VCF_format.html |
+| Identify Known Mutations from Mapping | https://resources.qiagenbioinformatics.com/manuals/clcgenomicsworkbench/950/index.php?manual=Identify_Known_Mutations_from_Sample_Mappings.html |
